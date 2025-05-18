@@ -1,5 +1,5 @@
-import speech_recognition as sr # type: ignore
-import RPi.GPIO as GPIO # type: ignore
+import speech_recognition as sr 
+import RPi.GPIO as GPIO 
 import sys
 import os
 import contextlib
@@ -14,7 +14,7 @@ def test_microphone():
     # Initialize recognizer
     r = sr.Recognizer()
     
-    # Configure microphone with higher quality settings
+    # Configure the microphone with higher quality settings
     mic = sr.Microphone(
         sample_rate=48000,  # Higher sample rate
         chunk_size=4096,    # Larger chunk size for better quality
